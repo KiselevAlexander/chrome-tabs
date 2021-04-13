@@ -245,7 +245,7 @@
     }
 
     updateTab(tabEl, tabProperties) {
-      tabEl.querySelector('.chrome-tab-title').textContent = tabProperties.title
+      tabEl.querySelector('.chrome-tab-title').innerHTML = tabProperties.title
 
       const faviconEl = tabEl.querySelector('.chrome-tab-favicon')
       if (tabProperties.favicon) {
